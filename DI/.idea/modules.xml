@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DI.iml" filepath="$PROJECT_DIR$/DI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorldCommandLineArguments/HelloWorldCommandLineArguments.iml" filepath="$PROJECT_DIR$/HelloWorldCommandLineArguments/HelloWorldCommandLineArguments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorldDecoupled/HelloWorldDecoupled.iml" filepath="$PROJECT_DIR$/HelloWorldDecoupled/HelloWorldDecoupled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorldDecoupledInterface/HelloWorldDecoupledInterface.iml" filepath="$PROJECT_DIR$/HelloWorldDecoupledInterface/HelloWorldDecoupledInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorldDecoupledInterfaceWithFactory/HelloWorldDecoupledInterfaceWithFactory.iml" filepath="$PROJECT_DIR$/HelloWorldDecoupledInterfaceWithFactory/HelloWorldDecoupledInterfaceWithFactory.iml" />
+    </modules>
+  </component>
+</project>
