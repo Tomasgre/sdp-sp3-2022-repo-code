@@ -36,6 +36,19 @@ public class Example {
 //    }
 
 //    static void expression() {
+//        int numLetters = 0;
+//        Day day = Day.WEDNESDAY;
+//        switch (day) {
+//            case MONDAY, FRIDAY, SUNDAY -> numLetters = 6;
+//            case TUESDAY -> numLetters = 7;
+//            case THURSDAY, SATURDAY -> numLetters = 8;
+//            case WEDNESDAY -> numLetters = 9;
+//            default -> throw new IllegalStateException("Invalid day: " + day);
+//        }
+//        System.out.println(numLetters);
+//    }
+
+//    static void expression() {
 //        Day day = Day.WEDNESDAY;
 //        System.out.println(
 //            switch (day) {
@@ -48,18 +61,6 @@ public class Example {
 //        );
 //    }
 
-//    static void expression() {
-//        int numLetters = 0;
-//        Day day = Day.WEDNESDAY;
-//        switch (day) {
-//            case MONDAY, FRIDAY, SUNDAY -> numLetters = 6;
-//            case TUESDAY -> numLetters = 7;
-//            case THURSDAY, SATURDAY -> numLetters = 8;
-//            case WEDNESDAY -> numLetters = 9;
-//            default -> throw new IllegalStateException("Invalid day: " + day);
-//        }
-//        System.out.println(numLetters);
-//    }
 
     static void expression() {
         Day day = Day.WEDNESDAY;
