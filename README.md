@@ -1,4 +1,4 @@
-# Example code
+# Example code — 2022
 The examples, exercises, and coursework files for the 
 
 - Software Design and Programming, and 
@@ -24,6 +24,7 @@ modules at Birkbeck, University of London.
 + javaimpatient - example code from the book by Cay Horstmann
 + `junit` - Junit 4 and 5 examples
 + lambdas
++ linkedin-learning – Example code from the various recommended LinkedIn Learning courses
 + lombok - Project Lombok examples
 + module-examples - JPMS examples
 + optional - examples of the use of `Optional`
