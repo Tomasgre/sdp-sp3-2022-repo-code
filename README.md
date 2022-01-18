@@ -18,7 +18,6 @@ modules at Birkbeck, University of London.
 + designpatterns - examples of the various GoF design patterns
 + designpatternsbanas - code examples accompanying the videos by Derek Banas
 + examples - general Java examples
-+ fpinjava - "Functional Programming in Java" book example code
 + generics - examples
 + guice - DI framework example
 + javaimpatient - example code from the book by Cay Horstmann
@@ -34,6 +33,7 @@ modules at Birkbeck, University of London.
 + SOLID - examples of the SOLID principles
 + streams - Java Streams (not the IO streams)
 + `tryWithResources` 
++ worksheet-?? — outline solutions to the worksheets
 + ...
 
 ------
