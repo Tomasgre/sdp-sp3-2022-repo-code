@@ -249,35 +249,6 @@ Arrays.sort(s, Comparator.comparing(C::countEs))
 
 ---
 
-# Some Suggestions for the second worksheet
-
-+ To sort a String[] object in different ways, try cloning it several times into an ArrayList or a 2D array, and sort each clone differently. For example:
-```
-String[] strings = new String[] {"a", "ff", "bbb", "eeee", "ccccc", "dddddd"};
-ArrayList<String[]> copies = new ArrayList();
-    for (int i = 0; i < 5; i++) {
-      copies.add(strings.clone());
-    }
-...
-Arrays.sort(copies.get(0), comparator0);
-Arrays.sort(copies.get(1), comparator1);
-...
-```
-
-+ You can convert an array into a List using Arrays.toList, or List.of:
-```
-List<String> stringList = Arrays.asList(strings);
-List<String> stringList2 = List.of(string1, string2, string3); // or List.of(your_array)
-```
-Note that you get (an implementation of) List, not an ArrayList.
-
-+ Or use constructor of ArrayList, passing in a collection:
-```
-ArrayList<String> a = new ArrayList(List.of(your_stuff))
-```
-
----
-
 # Learn to use IntelliJ efficiently!
 
 + Useful keyboard shortcuts:
@@ -306,6 +277,6 @@ This is an example of one of the live templates.
 
 + Create your own Live Templates to save time typing...
 
-E.g. "print" -> System.out.println
+Or look into other keyboard shortcuts, e.g. type "sout" and press Tab to get System.out.println().
 
 ---
