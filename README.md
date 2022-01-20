@@ -9,7 +9,7 @@ modules at Birkbeck, University of London.
 ------
 
 + Consolidation - The Java "refresher" sessions.
-+ DI - dependency injection examples from class including the `HelloWorld` set of examples
++ dependencyinjection - dependency injection examples from class including the `HelloWorld` set of examples
 + BridgeBetween - some sample code that illustrates how to access data from a (essentially) package private class.
 + concurrency
 + corejava - example code from the book by Cay Horstmann
