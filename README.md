@@ -9,11 +9,9 @@ modules at Birkbeck, University of London.
 ------
 
 + BridgeBetween — some sample code that illustrates how to access data from a (essentially) package private class.
-+ FT
 + FactoryReflection
-+ PT
 + SOLID — examples of the SOLID principles
-+ Session??  — materials from the relevant session.
++ Session-??  — materials from the relevant session.
 + anonymous
 + arrays
 + collections
@@ -22,7 +20,6 @@ modules at Birkbeck, University of London.
 + corejava — example code from the book by Cay Horstmann
 + dagger — DI framework examples
 + datastructures
-+ defaults — `default` in interfaces
 + dependencyinjection — dependency injection examples from class including the `HelloWorld` set of examples
 + design-patterns-banas — code examples accompanying the videos by Derek Banas
 + design-patterns-examples — examples of the various GoF design patterns
