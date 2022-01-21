@@ -1,4 +1,6 @@
-## FP operators
+## Functional Programming operators 
+
+(You will have probably seen these in Python, or something similar.)
 
 + filter - a stream via a predicate
 + map - a stream by applying a function

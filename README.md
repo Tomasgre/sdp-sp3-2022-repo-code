@@ -8,12 +8,10 @@ modules at Birkbeck, University of London.
 
 ------
 
-+ BridgeBetween — some sample code that illustrates how to access data from a (essentially) package private class.
-+ FactoryReflection
-+ SOLID — examples of the SOLID principles
 + Session-??  — materials from the relevant session.
 + anonymous
 + arrays
++ bridgebetween — some sample code that illustrates how to access data from a (essentially) package private class.
 + collections
 + concurrency
 + consolidation — The Java "refresher" sessions.
@@ -35,11 +33,9 @@ modules at Birkbeck, University of London.
 + processes
 + proxies
 + recursion
-+ reflection
 + `searchexample` — the search examples from the coursework (Doom/Gloom) repository.
 + spring-examples
 + staticexample
-+ streams — Java Streams examples (not the I/O kind)
 + strings
 + tryWithResources
 + tryWithResources2
