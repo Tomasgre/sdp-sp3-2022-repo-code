@@ -8,34 +8,34 @@ modules at Birkbeck, University of London.
 
 ------
 
-+ Consolidation - The Java "refresher" sessions.
-+ DI - dependency injection examples from class including the `HelloWorld` set of examples
-+ BridgeBetween - some sample code that illustrates how to access data from a (essentially) package private class.
++ Session-??  — materials from the relevant session.
++ anonymous
++ arrays
++ bridgebetween — some sample code that illustrates how to access data from a (essentially) package private class.
++ collections
 + concurrency
-+ corejava - example code from the book by Cay Horstmann
-+ dagger - DI framework examples
-+ defaults - `default` in interfaces
-+ designpatterns - examples of the various GoF design patterns
-+ designpatternsbanas - code examples accompanying the videos by Derek Banas
-+ examples - general Java examples
-+ generics - examples
-+ guice - DI framework example
-+ javaimpatient - example code from the book by Cay Horstmann
++ consolidation — The Java "refresher" sessions.
++ corejava — example code from the book by Cay Horstmann
++ datastructures
++ dependencyinjection — dependency injection examples from class including the `HelloWorld` set of examples
++ design-patterns-banas — code examples accompanying the videos by Derek Banas
++ design-patterns-examples — examples of the various GoF design patterns
++ exceptions
++ http
 + `junit` - Junit 4 and 5 examples
-+ lambdas
 + linkedin-learning – Example code from the various recommended LinkedIn Learning courses
-+ lombok - Project Lombok examples
-+ module-examples - JPMS examples
-+ optional - examples of the use of `Optional`
-+ recursion - examples
-+ reflection - examples
-+ `searchexample` — the search examples from the second coursework (Doom/Gloom) repository.
-+ SOLID - examples of the SOLID principles
-+ streams - Java Streams (not the IO streams)
-+ `tryWithResources` 
-+ worksheet-?? — outline solutions to the worksheets
++ module-examples — the JPMS examples
++ optional — examples of the use of `Optional`
++ processes
++ proxies
++ recursion
++ `searchexample` — the search examples from the coursework (Doom/Gloom) repository.
++ spring-examples
++ staticexample
++ strings
++ tryWithResources
++ tryWithResources2
++ worksheet-?? — — outline solutions to the worksheets
 + ...
-
-------
 
 End of list
