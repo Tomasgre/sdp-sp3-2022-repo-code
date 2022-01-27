@@ -34,7 +34,6 @@ modules at Birkbeck, University of London.
 + staticexample
 + strings
 + tryWithResources
-+ tryWithResources2
 + worksheet-?? — — outline solutions to the worksheets
 + ...
 

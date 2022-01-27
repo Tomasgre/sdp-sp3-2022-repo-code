@@ -11,23 +11,27 @@ public class Example {
     MyInterface my = new MyInterface() {
       @Override
       public void myMethod() {
-        // TODO
+        System.out.println("In " + this.getClass().getName());
       }
     };
+
+    my.myMethod();
+    // In lambdas.MyClass
+    // In lambdas.Example$1
 
     my = () -> {
+      System.out.println("In lambda expression");
     };
 
-    my = System.out::println;
+    my.myMethod();
+    // In lambdas.MyClass
+    // In lambdas.Example$1
+    // In lambda expression
 
-    ex.myMethodInExample(() -> {
-    });
-    ex.myMethodInExample(new MyInterface() {
-      @Override
-      public void myMethod() {
-        // TODO
-      }
-    });
+    my = System.out::println;
+    my.myMethod();
+    // print a blank line
+
   }
 
   public void myMethodInExample(MyInterface myInt) {
@@ -60,6 +64,6 @@ class MyClass implements MyInterface {
 
   @Override
   public void myMethod() {
-    // TODO
+    System.out.println("In " + this.getClass().getName());
   }
 }
