@@ -10,6 +10,16 @@
 
 - Difference(s) between a class and an interface? An abstract class?
 
+# About the Worksheet...
+
+- Tests should use JUnit 5. Might need minor fixes to migrate.
+- Different imports, and way to test exceptions thrown (use a lambda)
+
+- Like a pottery class... "Make your own jug"
+- Definitely not a single answer!
+- Could have several approaches to all 5 parts.
+- I'll discuss some of these at the end of the session.
+
 # S = Single-Responsibility Principle
 
 - "Don't do everything in one class!"
