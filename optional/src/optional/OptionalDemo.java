@@ -84,12 +84,14 @@ public class OptionalDemo {
     System.out.println("result: " + result);
     result = optionalString.orElseGet(() -> System.getProperty("user.dir"));
     System.out.println("result: " + result);
+
     try {
       result = optionalString.orElseThrow(IllegalStateException::new);
       System.out.println("result: " + result);
     } catch (Exception t) {
       logger.log(Level.INFO, t.getMessage());
     }
+    
     Optional<String> result2 = optionalString.or(() -> Optional.ofNullable(System.getProperty("myapp.default")));
     System.out.println("result2: " + result2);
 
