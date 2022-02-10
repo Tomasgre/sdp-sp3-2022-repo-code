@@ -23,7 +23,8 @@ public class MyClassPrompt {
         System.out.println(x);
       }
     } catch (ClassNotFoundException e) {
-      e.printStackTrace();
+      System.err.println("Could not find the class!");
+      //e.printStackTrace();
     }
   }
 }

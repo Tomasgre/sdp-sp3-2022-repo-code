@@ -19,7 +19,7 @@ class Simple {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
+        var sb = new StringBuilder();
         sb.append("First: ").append(first)
             .append(", Second: ").append(second)
             .append(", Third: ").append(third)

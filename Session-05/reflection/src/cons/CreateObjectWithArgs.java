@@ -22,27 +22,27 @@ public class CreateObjectWithArgs {
             Constructor con = null;
 
             // get the required constructor with the appropriate number of parameters
-            for (var item : cons) {
-                if (item.getParameterTypes().length == splitArgs.length) {
-                    con = item;
-                }
-            }
+//            for (var item : cons) {
+//                if (item.getParameterTypes().length == splitArgs.length) {
+//                    con = item;
+//                }
+//            }
 
             // OR
 
             // get the required constructor with the appropriate parameter types
-            /*
+
             Class[] argTypes = new Class[splitArgs.length];
             for (int index=0; index < splitArgs.length; index++){
                 argTypes[index] = splitArgs[index].getClass();
             }
-
             con = c.getDeclaredConstructor(argTypes);
-            */
+
 
             // check the parameter types
+            System.out.println("Constructor formal parameter types: ");
             for (Class cl : con.getParameterTypes()) {
-                System.out.println(cl);
+                System.out.println("\t" + cl);
             }
 
             // now create the instance
