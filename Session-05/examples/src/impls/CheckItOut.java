@@ -2,9 +2,7 @@ package impls;
 
 // find all classes in a package
 
-import java.io.BufferedReader;
 import java.io.DataInputStream;
-import java.io.FileReader;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.ArrayList;
@@ -12,9 +10,9 @@ import java.util.List;
 
 public class CheckItOut {
     public static void main(String[] args) throws Exception {
-        List<Class> classes = CheckItOut.getClasses(MyInterface.class.getClassLoader(), "impls");
-        for (Class c : classes) {
-            for (Class cl : c.getInterfaces()) {
+        var classes = CheckItOut.getClasses(MyInterface.class.getClassLoader(), "impls");
+        for (var c : classes) {
+            for (var cl : c.getInterfaces()) {
                 if (cl.getSimpleName().equals("MyInterface")) {
                     System.out.println(c.getSimpleName());
                 }
@@ -34,6 +32,7 @@ public class CheckItOut {
                 classes.add(Class.forName(pack + "." + line.substring(0, line.lastIndexOf('.'))));
             }
         }
+        //classes.stream().forEach(System.out::println);
         return classes;
     }
 }
