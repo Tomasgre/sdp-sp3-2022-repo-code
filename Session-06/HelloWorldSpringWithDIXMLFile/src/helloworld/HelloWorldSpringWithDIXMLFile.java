@@ -12,3 +12,7 @@ public class HelloWorldSpringWithDIXMLFile {
     mr.render();
   }
 }
+
+// DI -> constructor inject the dependency as an argument
+// DI -> mutator method (setter) again as an argument
+// DI -> field mutation
