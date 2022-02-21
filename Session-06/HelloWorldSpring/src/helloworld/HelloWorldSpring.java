@@ -8,19 +8,21 @@ import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.support.PropertiesBeanDefinitionReader;
 
 public class HelloWorldSpring {
+
   public static void main(String[] args) throws Exception {
     // get the bean factory
     BeanFactory factory = getBeanFactory();
 
     MessageRenderer mr = (MessageRenderer) factory.getBean("renderer");
     MessageProvider mp = (MessageProvider) factory.getBean("provider");
+
     mr.setMessageProvider(mp);
     mr.render();
   }
 
   private static BeanFactory getBeanFactory() throws Exception {
     // get the bean factory - understanding DefaultListableBeanFactory() not really important.
-    //It is just a Factory class example from Spring.
+    //It is just an Factory class example from Spring.
     DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
 
     // create a definition reader
