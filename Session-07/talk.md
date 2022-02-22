@@ -10,9 +10,9 @@
 - **What**: Design class so it's only possible to have one object of that type in your program!
 
 - **How**:
-  - Control access to the unique instance through a public static "getInstance" method
+  - Control access to the unique instance through a public static "getInstance" method (*which can also create the object the first time it is called*)
 
-  - Make constructors private, keep one instance of the class in a private static variable, and only create and allow access to it through that public method.
+  - Make constructors private or package-private, keep one instance of the class in a private static variable, and only create and allow access to it through that public method.
 
 # Factory Method
 
@@ -42,13 +42,13 @@
 
 - **Compare With**:
 
-  - **Factory Object** (not exactly a design pattern) is similar to Factory Method, but the method that creates objects is moved into a separate object. E.g. KnifeFactory, BudgetKnifeFactory, LuxuryKnifeFactory.
+  - **Factory Object** (not exactly a design pattern) is similar to Factory Method, but the method that creates objects is moved into a separate class. E.g. KnifeFactory, BudgetKnifeFactory, LuxuryKnifeFactory.
 
   - This is appropriate if there are several classes that need to create the objects.
 
   - **Abstract Factory** pattern: A Factory object with one or more create methods, for several different kinds of related objects: a "product family". (E.g. create parts of a car.) Different product families are handled by different subclasses of the abstract factory base class. (E.g. FordFactory, HondaFactory.)
 
-  - **Builder pattern**: Don't create objects in a single factory method. Instead use multiple methods (in a separate Builder object) to construct an object step-by-step, and when finished, call a "build" method to produce the object.
+  - **Builder pattern**: Use a separate Builder object (like Factory object), but don't create objects in a single method. Instead, multiple methods can be called to construct parts of an object; and when finished, a "build" method will create and return the object. Normally the creation process is handled by a Director object.
 
 
 # Structural Patterns
@@ -156,7 +156,7 @@
 - **Compare With**:
   - Strategy pattern: Rather than subclasses providing the implementation of the algorithm steps, this pattern uses subclasses of a Strategy class to decide which algorithm to use!
 
-  - Builder pattern: That one is specifically about object creation. The "steps" are controlled by external clients, not a template method. (And it's usually a separate Builder class.)
+  - Builder pattern: That one is specifically about object creation. The "steps" are controlled by a separate Director object, not a template method. (And it's usually a separate Builder class.)
 
 
 # Quiz of Pain
