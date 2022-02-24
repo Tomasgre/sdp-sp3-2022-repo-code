@@ -20,11 +20,11 @@ public class ConcreteProduct implements Product {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         DecimalFormat df = new DecimalFormat("£###.##");
         DateTimeFormatter datef = DateTimeFormatter.ofPattern("EEE, MMM d, yyyy");
         return getName() + " (" + getType().toString() + "), "
-                + df.format(getPrice()) + ", date made: " + datef.format(getDateMade());
+            + df.format(getPrice()) + ", date made: " + datef.format(getDateMade());
     }
 
     @Override

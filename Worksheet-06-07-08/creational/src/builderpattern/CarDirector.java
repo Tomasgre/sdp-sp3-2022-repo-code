@@ -8,7 +8,7 @@ public class CarDirector {
         this.builder = builder;
     }
 
-    public void build (){
+    public void build() {
         this.builder.buildBody();
         this.builder.buildBreaks();
         this.builder.buildEngine();
@@ -18,7 +18,7 @@ public class CarDirector {
         this.builder.buildWindows();
     }
 
-    public Car getCar(){
+    public Car getCar() {
         return this.builder.getCar();
     }
 }

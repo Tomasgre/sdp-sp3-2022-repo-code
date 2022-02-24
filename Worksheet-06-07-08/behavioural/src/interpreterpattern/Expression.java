@@ -1,5 +1,5 @@
 package interpreterpattern;
 
 public interface Expression {
-  public int interpret();
+    public int interpret();
 }

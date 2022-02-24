@@ -4,11 +4,15 @@ public class LDNFactory implements AbstractParserFactory {
     @Override
     public XMLParser getParserInstance(String parserType) {
 
-        switch (parserType){
-            case "LDNERROR": return new LDNErrorXMLParser();
-            case "LDNFEEDBACK": return new LDNFeedbackXML();
-            case "LDNORDER": return new LDNOrderXMLParser();
-            case "LDNRESPONSE": return new LDNResponseXMLParser();
+        switch (parserType) {
+            case "LDNERROR":
+                return new LDNErrorXMLParser();
+            case "LDNFEEDBACK":
+                return new LDNFeedbackXML();
+            case "LDNORDER":
+                return new LDNOrderXMLParser();
+            case "LDNRESPONSE":
+                return new LDNResponseXMLParser();
         }
         return null;
     }

@@ -14,17 +14,16 @@ public class SingletonProtected implements Serializable {
 
      */
 
+    // volatile means that the object isn't cached and taken direct from memory
+    private static volatile SingletonProtected obj = null;
     // fields must be transient as part of efforts to avoid serializability
     private transient String message = "Protected";
 
-    // volatile means that the object isn't cached and taken direct from memory
-    private static volatile SingletonProtected obj  = null;
+    private SingletonProtected() {
+    }
 
-    private SingletonProtected() {}
-
-    public static synchronized SingletonProtected getInstance()
-    {
-        if (obj==null) {
+    public static synchronized SingletonProtected getInstance() {
+        if (obj == null) {
             obj = new SingletonProtected();
         }
         return obj;
@@ -47,7 +46,7 @@ public class SingletonProtected implements Serializable {
 
     // to prevent a Singleton from being serialized - Create a readResolve() method
     // This method is used in the deserialization process
-    protected Object readResolve(){
+    protected Object readResolve() {
         return getInstance();
     }
 }

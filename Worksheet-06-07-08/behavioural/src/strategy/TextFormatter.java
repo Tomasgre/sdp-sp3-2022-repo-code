@@ -1,5 +1,5 @@
 package strategy;
 
 public interface TextFormatter {
-  public void format(String text);
+    public void format(String text);
 }

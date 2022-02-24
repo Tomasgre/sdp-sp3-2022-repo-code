@@ -1,6 +1,6 @@
 package decorator;
 
-public abstract class PizzaDecorator implements Pizza{
+public abstract class PizzaDecorator implements Pizza {
     protected Pizza pizza;
     protected double price;
 
