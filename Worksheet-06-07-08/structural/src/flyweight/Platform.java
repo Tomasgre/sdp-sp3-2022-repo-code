@@ -1,5 +1,5 @@
 package flyweight;
 
 public interface Platform {
-  public void execute(Code code);
+    public void execute(Code code);
 }

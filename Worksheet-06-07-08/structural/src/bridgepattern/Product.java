@@ -2,7 +2,7 @@ package bridgepattern;
 
 interface Product {
 
-  public String productName();
+    public String productName();
 
-  public void produce();
+    public void produce();
 }

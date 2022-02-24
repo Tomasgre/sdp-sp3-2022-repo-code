@@ -4,16 +4,16 @@ public class EstateCarBuilder implements CarBuilder {
 
     private Car car;
 
-    public EstateCarBuilder(){
+    public EstateCarBuilder() {
         this.car = new Car("ESTATE");
     }
 
     @Override
     public void buildBody() {
         car.setBodyStyle("External dimensions: overall length (inches): "
-                + "202.9, overall width (inches): 76.2, overall height (inches): "
-                + "60.7, wheelbase (inches): 112.9, front track (inches): 65.3, rear "
-                + "track (inches): 65.5 and curb to curb turning circle (feet): 39.5");
+            + "202.9, overall width (inches): 76.2, overall height (inches): "
+            + "60.7, wheelbase (inches): 112.9, front track (inches): 65.3, rear "
+            + "track (inches): 65.5 and curb to curb turning circle (feet): 39.5");
     }
 
     @Override
@@ -46,7 +46,7 @@ public class EstateCarBuilder implements CarBuilder {
         car.setFuelType("Gasoline 19 MPG city, 29 MPG highway, 23 MPG combined and 437 mi. range");
     }
 
-    public Car getCar(){
+    public Car getCar() {
         return this.car;
     }
 }

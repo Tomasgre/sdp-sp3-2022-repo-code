@@ -6,11 +6,15 @@ public class NYCFactory implements AbstractParserFactory {
     @Override
     public XMLParser getParserInstance(String parserType) {
 
-        switch (parserType){
-            case "NYCERROR": return new NYCErrorXMLParser();
-            case "NYCFEEDBACK": return new NYCFeedbackXML();
-            case "NYCORDER": return new NYCOrderXMLParser();
-            case "NYCRESPONSE": return new NYCResponseXMLParser();
+        switch (parserType) {
+            case "NYCERROR":
+                return new NYCErrorXMLParser();
+            case "NYCFEEDBACK":
+                return new NYCFeedbackXML();
+            case "NYCORDER":
+                return new NYCOrderXMLParser();
+            case "NYCRESPONSE":
+                return new NYCResponseXMLParser();
         }
         return null;
     }

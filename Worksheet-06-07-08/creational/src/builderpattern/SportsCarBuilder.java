@@ -6,15 +6,15 @@ public class SportsCarBuilder implements CarBuilder {
 
     private Car car;
 
-    public SportsCarBuilder(){
+    public SportsCarBuilder() {
         this.car = new Car("SPORTS");
     }
 
     @Override
     public void buildBody() {
         car.setBodyStyle("External dimensions: overall length (inches): 192.3, overall width (inches): "
-                + "75.5, overall height (inches): 54.2, wheelbase (inches): 112.3, front track "
-                + "(inches): 63.7, rear track (inches): 64.1 and curb to curb turning circle (feet): 37.7");
+            + "75.5, overall height (inches): 54.2, wheelbase (inches): 112.3, front track "
+            + "(inches): 63.7, rear track (inches): 64.1 and curb to curb turning circle (feet): 37.7");
     }
 
     @Override
@@ -47,7 +47,7 @@ public class SportsCarBuilder implements CarBuilder {
         car.setFuelType("Gasoline 17 MPG city, 28 MPG highway, 20 MPG combined and 380 mi. range");
     }
 
-    public Car getCar(){
+    public Car getCar() {
         return this.car;
     }
 }

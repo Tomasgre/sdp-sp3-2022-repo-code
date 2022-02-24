@@ -12,7 +12,8 @@ public class Client {
         s2.setMessage("Static message changed");
         System.out.println(s.getMessage());
         if (s.equals(s2)) {
-            System.out.println("Same Singleton instance!"); }
+            System.out.println("Same Singleton instance!");
+        }
 
         System.out.println("-----------------------------");
 
@@ -20,7 +21,8 @@ public class Client {
         System.out.println(sb.getMessage());
         SingletonSimple sb2 = SingletonSimple.obj;
         if (sb.equals(sb2)) {
-            System.out.println("Same Simple Singleton instance!"); }
+            System.out.println("Same Simple Singleton instance!");
+        }
 
         System.out.println("-----------------------------");
 
@@ -30,7 +32,8 @@ public class Client {
         sl2.setMessage("Lazy message changed");
         System.out.println(sl.getMessage());
         if (sl.equals(sl2)) {
-            System.out.println("Same Lazy Singleton instance!"); }
+            System.out.println("Same Lazy Singleton instance!");
+        }
 
         System.out.println("-----------------------------");
 
@@ -40,7 +43,8 @@ public class Client {
         sla2.setMessage("Lazy message changed");
         System.out.println(sla.getMessage());
         if (sla.equals(sla2)) {
-            System.out.println("Same Lazy Nested Singleton instance!"); }
+            System.out.println("Same Lazy Nested Singleton instance!");
+        }
 
         System.out.println("-----------------------------");
 
@@ -50,7 +54,8 @@ public class Client {
         slp2.setMessage("Protected message changed");
         System.out.println(slp.getMessage());
         if (slp.equals(slp2)) {
-            System.out.println("Same Protected Singleton instance!"); }
+            System.out.println("Same Protected Singleton instance!");
+        }
 
     }
 }
