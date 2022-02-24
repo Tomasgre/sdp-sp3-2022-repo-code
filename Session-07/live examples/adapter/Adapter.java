@@ -6,7 +6,7 @@ public class Adapter implements EuropeanSocket {
 
     @Override
     public void connectEuroStyle() {
-        s.changeVoltage(230);
-        s.connectUKStyle();
+        // ...internal wiring... goes out to the UK plug.
+        s.connectToUKSocket();
     }
 }
