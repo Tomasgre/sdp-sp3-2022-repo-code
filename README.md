@@ -8,7 +8,7 @@ modules at Birkbeck, University of London.
 
 ------
 
-+ Session-??  — materials from the relevant session.
++ session-??  — materials from the relevant session.
 + anonymous
 + arrays
 + bridgebetween — some sample code that illustrates how to access data from a (essentially) package private class.
