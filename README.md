@@ -8,6 +8,7 @@ modules at Birkbeck, University of London.
 
 ------
 
++ Session-??  — materials from the relevant session.
 + anonymous
 + arrays
 + bridgebetween — some sample code that illustrates how to access data from a (essentially) package private class.
@@ -29,7 +30,6 @@ modules at Birkbeck, University of London.
 + proxies
 + recursion
 + `searchexample` — the search examples from the coursework (Doom/Gloom) repository.
-+ session-??  — materials from the relevant session.
 + spring-examples
 + staticexample
 + strings
