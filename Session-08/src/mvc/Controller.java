@@ -6,11 +6,11 @@ public class Controller {
 
     public void setValue(Boolean newValue) {
         if (model.getValue().equals(newValue))
-            view.warnUnnecessaryUpdate();
+            // model is not updated
+            view.setStatusWarning(); // note that the View is responsible for the exact message, etc.
         else {
             model.setValue(newValue);
-            view.successfulUpdate();
+            view.setStatusSuccess();
         }
-        view.refresh();
     }
 }
