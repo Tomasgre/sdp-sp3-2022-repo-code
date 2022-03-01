@@ -11,14 +11,14 @@ public class Main {
         System.out.println("A/B Events with a forwarding mediator:");
         cA.mediator = fm;
         cB.mediator = fm;
-        cA.eventA("A event");
-        cB.eventB("B event");
+        cA.triggerA("A event");
+        cB.triggerB("B event");
 
         System.out.println("A/B Events with a bounce-back mediator:");
         cA.mediator = bbm;
         cB.mediator = bbm;
-        cA.eventA("A event");
-        cB.eventB("B event");
+        cA.triggerA("A event");
+        cB.triggerB("B event");
 
     }
 }

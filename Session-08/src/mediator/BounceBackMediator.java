@@ -1,8 +1,9 @@
 package mediator;
 
 public class BounceBackMediator implements Mediator {
-    public ComponentA componentA;
-    public ComponentB componentB;
+
+    private ComponentA componentA;
+    private ComponentB componentB;
 
     public BounceBackMediator(ComponentA cA, ComponentB cB) {
         this.componentA = cA;
@@ -10,11 +11,13 @@ public class BounceBackMediator implements Mediator {
     }
 
     @Override
-    public void notify(Component component, String params) {
+    public void mediate(Component component, String params) {
         if (component == componentA) {
-            componentA.responseA(params + " returned to sender");
+            componentA.handleA(params + " returned to sender");
         } else if (component == componentB) {
-            componentB.responseB(params + " returned to sender");
+            componentB.handleB(params + " returned to sender");
+        } else {
+            System.out.println("Unidentified component");
         }
     }
 }

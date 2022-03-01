@@ -2,6 +2,10 @@ package chain;
 
 public class HandlerC extends Handler {
 
+    public HandlerC(String name) {
+        super(name);
+    }
+
     @Override
     public void handle(String request) {
         if (request.equals("C"))

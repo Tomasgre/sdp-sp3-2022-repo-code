@@ -5,8 +5,8 @@ public class Copy implements Command {
     private File file;
     private String destination;
 
-    public Copy(File f, String destination) {
-        this.file = f;
+    public Copy(File file, String destination) {
+        this.file = file;
         this.destination = destination;
     }
 

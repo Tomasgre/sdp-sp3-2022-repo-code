@@ -2,6 +2,6 @@ package mediator;
 
 public interface Mediator {
 
-    public void notify(Component component, String params);
+    public void mediate(Component component, String params);
 
 }
