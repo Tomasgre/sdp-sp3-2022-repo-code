@@ -9,28 +9,28 @@ import spring.model.EmployeeImpl;
 import spring.service.EmployeeService;
 
 public class AppMain {
-  public static void main(String[] args) {
-    AbstractApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+    public static void main(String[] args) {
+        AbstractApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-    // OR
+        // OR
 
-    //    AbstractApplicationContext context = new ClassPathXmlApplicationContext("app-config.xml");
+        //    AbstractApplicationContext context = new ClassPathXmlApplicationContext("app-config.xml");
 
-    // OR
+        // OR
 
-    //    AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-    //    context.scan("spring");
-    //    context.refresh();
+//        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+//        context.scan("spring");
+//        context.refresh();
 
-    EmployeeService service = (EmployeeService) context.getBean("employeeService");
+        EmployeeService service = (EmployeeService) context.getBean("employeeService");
 
-    /*
-     * Register employee using service
-     */
-    Employee employee = new EmployeeImpl();
-    employee.setName("Fred Bloggs");
-    service.registerEmployee(employee);
+        /*
+         * Register employee using service
+         */
+        Employee employee = new EmployeeImpl();
+        employee.setName("Fred Bloggs");
+        service.registerEmployee(employee);
 
-    context.close();
-  }
+        context.close();
+    }
 }

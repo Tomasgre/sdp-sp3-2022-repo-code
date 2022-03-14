@@ -15,7 +15,7 @@ modules at Birkbeck, University of London.
 + collections
 + concurrency
 + consolidation — The Java "refresher" sessions.
-+ corejava — example code from the book by Cay Horstmann
++ `dagger` and `dagger2` — Google Dagger examples
 + datastructures
 + dependencyinjection — dependency injection examples from class including the `HelloWorld` set of examples
 + design-patterns-banas — code examples accompanying the videos by Derek Banas
@@ -31,6 +31,7 @@ modules at Birkbeck, University of London.
 + recursion
 + `searchexample` — the search examples from the coursework (Doom/Gloom) repository.
 + spring-examples
++ `spring-singleton` — Use of the `@Singleton` annotation
 + staticexample
 + strings
 + tryWithResources

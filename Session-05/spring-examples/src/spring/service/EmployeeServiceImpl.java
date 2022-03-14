@@ -6,7 +6,8 @@ import spring.dao.EmployeeDao;
 import spring.model.Employee;
 
 /*
- * EmployeeService is our main service class.Notice that we have injected both DateService and EmployeeDao in this.
+ * EmployeeService is our main service class.
+ * Notice that we have injected both DateService and EmployeeDao in this.
  * @Autowired on dateService property marks the DateService to be auto-wired by Spring’s dependency injection
  * with the appropriate bean in Spring context.
  * In this case, we have already declared a DateService bean using @Service, so that bean will be injected here.
