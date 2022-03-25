@@ -6,8 +6,8 @@ import java.util.Random;
 /*
  * This program measures the runtime of the merge sort algorithm,
  * in both a standard sequential version and a parallel version
-* that uses multiple threads.
-*/
+ * that uses multiple threads.
+ */
 
 public class MergeSort {
 	private static final Random RAND = new Random(42); // random number generator
@@ -36,7 +36,7 @@ public class MergeSort {
 	public static void parallelMergeSort(int[] a) {
 		int cores = Runtime.getRuntime().availableProcessors();
 		System.out.println("The number of cores: " + cores);
-		parallelMergeSort(a, cores);
+		parallelMergeSort(a, cores - 1);
 	}
 
 	public static void parallelMergeSort(int[] a, int threadCount) {
