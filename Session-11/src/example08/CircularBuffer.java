@@ -52,7 +52,7 @@ public class CircularBuffer implements Buffer {
 
 	// return value from buffer
 	public int get() {
-		int readValue = 0; // initialize value read from buffer
+		int readValue = 0; // Initialise value read from buffer
 		accessLock.lock(); // lock this object
 
 		// wait until buffer has data, then read value
@@ -72,7 +72,7 @@ public class CircularBuffer implements Buffer {
 			displayState("Consumer reads " + readValue);
 			canWrite.signal(); // signal threads waiting to write to buffer
 		} // end try
-		// if waiting thread interrupted, print stack trace
+			// if waiting thread interrupted, print stack trace
 		catch (InterruptedException exception) {
 			exception.printStackTrace();
 		} // end catch
@@ -86,8 +86,7 @@ public class CircularBuffer implements Buffer {
 	// display current operation and buffer state
 	public void displayState(String operation) {
 		// output operation and number of occupied buffers
-		System.out.printf("%s%s%d)\n%s", operation, " (buffers occupied: ",
-				occupiedBuffers, "buffers:  ");
+		System.out.printf("%s%s%d)\n%s", operation, " (buffers occupied: ", occupiedBuffers, "buffers:  ");
 
 		for (int value : buffer)
 			System.out.printf(" %2d  ", value); // output values in buffer

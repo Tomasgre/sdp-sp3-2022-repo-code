@@ -13,8 +13,7 @@ public class BlockingBuffer implements Buffer {
 	public void set(int value) {
 		try {
 			buffer.put(value); // place value in circular buffer
-			System.out.printf("%s%2d\t%s%d\n", "Producer writes ", value,
-					"Buffers occupied: ", buffer.size());
+			System.out.printf("%s%2d\t%s%d\n", "Producer writes ", value, "Buffers occupied: ", buffer.size());
 		} // end try
 		catch (Exception exception) {
 			exception.printStackTrace();
@@ -23,12 +22,11 @@ public class BlockingBuffer implements Buffer {
 
 	// return value from buffer
 	public int get() {
-		int readValue = 0; // initialize value read from buffer
+		int readValue = 0; // Initialise value read from buffer
 
 		try {
 			readValue = buffer.take(); // remove value from circular buffer
-			System.out.printf("%s %2d\t%s%d\n", "Consumer reads ", readValue,
-					"Buffers occupied: ", buffer.size());
+			System.out.printf("%s %2d\t%s%d\n", "Consumer reads ", readValue, "Buffers occupied: ", buffer.size());
 		} // end try
 		catch (Exception exception) {
 			exception.printStackTrace();

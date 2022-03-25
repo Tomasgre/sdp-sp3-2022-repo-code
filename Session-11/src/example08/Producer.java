@@ -23,13 +23,12 @@ public class Producer implements Runnable {
 				sharedLocation.set(count); // set value in buffer
 				sum += count; // increment sum of values
 			} // end try
-			// if sleeping thread interrupted, print stack trace
+				// if sleeping thread interrupted, print stack trace
 			catch (InterruptedException exception) {
 				exception.printStackTrace();
 			} // end catch
 		} // end for
 
-		System.out.printf("\n%s\n%s\n", "Producer done producing.",
-				"Terminating Producer.");
+		System.out.printf("\n%s\n%s\n", "Producer done producing.", "Terminating Producer.");
 	} // end method run
 } // end class Producer

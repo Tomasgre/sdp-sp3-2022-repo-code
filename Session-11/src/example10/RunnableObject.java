@@ -32,7 +32,7 @@ public class RunnableObject implements Runnable {
 
 				lockObject.lock(); // obtain the lock
 				try {
-					while (suspended){ // loop until not suspended
+					while (suspended) { // loop until not suspended
 						suspend.await(); // suspend thread execution
 					} // end while
 				} // end try
@@ -40,7 +40,7 @@ public class RunnableObject implements Runnable {
 					lockObject.unlock(); // unlock the lock
 				} // end finally
 			} // end try
-			// if thread interrupted during wait/sleep
+				// if thread interrupted during wait/sleep
 			catch (InterruptedException exception) {
 				exception.printStackTrace(); // print stack trace
 			} // end catch
@@ -56,7 +56,7 @@ public class RunnableObject implements Runnable {
 					output.setText(threadName + ": " + displayChar);
 				} // end method run
 			} // end inner class
-					); // end call to SwingUtilities.invokeLater
+			); // end call to SwingUtilities.invokeLater
 		} // end while
 	} // end method run
 
@@ -64,13 +64,12 @@ public class RunnableObject implements Runnable {
 	public void toggle() {
 		suspended = !suspended; // toggle boolean controlling state
 
-		// change label color on suspend/resume
+		// change label colour on suspend/resume
 		output.setBackground(suspended ? Color.RED : Color.GREEN);
 
 		lockObject.lock(); // obtain lock
 		try {
-			if (!suspended) // if thread resumed
-			{
+			if (!suspended) {// if thread resumed
 				suspend.signal(); // resume thread
 			} // end if
 		} // end try

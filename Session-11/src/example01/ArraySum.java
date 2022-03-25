@@ -28,7 +28,7 @@ public class ArraySum {
 			}
 			long endTime1 = System.currentTimeMillis();
 
-			int correct = sum(a,16);
+			int correct = sum(a, 16);
 			if (total != correct) {
 				throw new RuntimeException("wrong sum: " + total + " vs. " + correct);
 			}

@@ -22,13 +22,12 @@ public class Consumer implements Runnable {
 				Thread.sleep(generator.nextInt(3000));
 				sum += sharedLocation.get();
 			} // end try
-			// if sleeping thread interrupted, print stack trace
+				// if sleeping thread interrupted, print stack trace
 			catch (InterruptedException exception) {
 				exception.printStackTrace();
 			} // end catch
 		} // end for
 
-		System.out.printf("\n%s %d.\n%s\n", "Consumer read values totaling",
-				sum, "Terminating Consumer.");
+		System.out.printf("\n%s %d.\n%s\n", "Consumer read values totaling", sum, "Terminating Consumer.");
 	} // end method run
 } // end class Consumer
