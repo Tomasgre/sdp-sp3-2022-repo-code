@@ -1,10 +1,6 @@
-# Example code — 2022
-The examples, exercises, and coursework files for the 
+# Example code — 2022-23
 
-- Software Design and Programming, and 
-- Software and Programming III 
-
-modules at Birkbeck, University of London.
+The examples, exercises, and coursework files for the Software and Programming III module at Birkbeck, University of London.
 
 ------
 
