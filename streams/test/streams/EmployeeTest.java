@@ -146,15 +146,16 @@ public class EmployeeTest {
     @Test
     public void whenFindFirst_thenGetFirstEmployeeInStream() {
         Integer[] empIds = {1, 2, 3, 4};
+        final Double LIMIT = Double.valueOf(d:100_00);
 
         Employee employee = Stream.of(empIds)
             .map(employeeRepository::findById)
             .filter(e -> e != null)
-            .filter(e -> e.getSalary() > 100000)
+            .filter(e -> e.getSalary() > LIMIT)
             .findFirst()
-            .orElse(null);
-
-        assertEquals(employee.getSalary(), new Double(200000));
+            .orElse(new Employee(id:10, name: "Donald", Double.valueOf(d: LIMIT * 5)));
+             System.out.println(employee);
+            assertEquals(employee.getSalary(), Double.valueOf(200000));
     }
 
     @Test
